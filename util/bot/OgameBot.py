@@ -62,7 +62,7 @@ class OgameBot(object):
         for info in account_info:
             if info['server']['number'] == server_id:
                 server_number = info['id']
-                language = info['server']['language']
+                server_language = info['server']['language']
                 break
 
         # Au
