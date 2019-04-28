@@ -59,6 +59,7 @@ class OgameBot(object):
 
         # Scrap the language of the server and the number from the logged user info
         for info in account_info:
+            print(info)
             info_server_number = info['server']['number']
             if info_server_number == server_id:
                 server_number = info['id']
