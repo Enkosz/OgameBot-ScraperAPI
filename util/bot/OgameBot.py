@@ -62,13 +62,14 @@ class OgameBot(object):
             print(type(info))
             print(info)
             print(type(info['server']))
-            print(info['server'])
-            print(info['server']['number'])
+
+            break
             info_server_number = info['server']['number']
             if info_server_number == server_id:
                 server_number = info['id']
                 server_language = info['server']['language']
             break
+        return
 
         # Au
         response = self.session.get(
