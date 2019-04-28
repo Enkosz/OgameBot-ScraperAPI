@@ -1,8 +1,8 @@
 from flask import Flask, jsonify
 from util.bot.OgameBot import OgameBot
 
+bot = OgameBot('simonegioele92@gmail.com', 'Simo2000', 'Galatea', '')
 app = Flask(__name__)
-bot = None
 
 
 @app.route('/planets')
@@ -16,5 +16,4 @@ def home():
 
 
 if __name__ == '__main__':
-    bot = OgameBot('simonegioele92@gmail.com', 'Simo2000', 'Galatea', '')
     app.run()
