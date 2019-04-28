@@ -10,5 +10,10 @@ def get_planets():
     return jsonify(bot.fetch_planets())
 
 
+@app.route('/')
+def home():
+    return "Hello I'm a Bot!"
+
+
 if __name__ == '__main__':
     app.run()
