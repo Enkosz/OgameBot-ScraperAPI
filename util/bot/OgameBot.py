@@ -9,6 +9,7 @@ from util.scraper.ogame_official_api import OGAME_OFFICIAL_API
 
 class OgameBot(object):
     def __init__(self, email, password, universe, domain):
+        print("STARTED")
         self.email = email
         self.password = password
         self.universe = universe
