@@ -2,6 +2,7 @@ from flask import Flask, jsonify
 from util.bot.OgameBot import OgameBot
 
 app = Flask(__name__)
+bot = None
 
 
 @app.route('/planets')
