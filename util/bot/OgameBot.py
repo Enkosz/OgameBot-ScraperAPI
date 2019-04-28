@@ -59,11 +59,11 @@ class OgameBot(object):
         server_language = None
 
         # Scrap the language of the server and the number from the logged user info
-        print(account_info)
         for info in account_info:
-            print(info)
-            print(info["server"])
-        return
+            if info['server']['number'] == server_id:
+                server_number = info['id']
+                language = info['server']['language']
+                break
 
         # Au
         response = self.session.get(
